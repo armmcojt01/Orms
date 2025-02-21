@@ -138,7 +138,7 @@ if (isset($_GET['position_id']) && $_GET['position_id'] >= 0) {
 									</td>
 									<td class="text-center">
 										<button class="btn btn-sm btn-primary view_application" type="button" data-id="<?php echo $row['id'] ?>" >View</button>
-										<button class="btn btn-sm btn-primary edit_application" type="button" data-id="<?php echo $row['id'] ?>" >Edit</button>
+										<button class="btn btn-sm btn-primary edit_application" type="button" data-id="<?php echo $row['id'] ?>" >Update Status</button>
 										<button class="btn btn-sm btn-danger delete_application" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>
 									</td>
 								</tr>

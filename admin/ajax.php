@@ -59,6 +59,11 @@ if($action == "save_vacancy"){
 	if($save)
 		echo $save;
 }
+if($action == "save_division"){
+	$save = $crud->save_division();
+	if($save)
+		echo $save;
+}
 if($action == "delete_vacancy"){
 	$save = $crud->delete_vacancy();
 	if($save)

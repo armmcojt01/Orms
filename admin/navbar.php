@@ -101,8 +101,12 @@
 
         <!-- remove access for login type -->
         <?php if($_SESSION['login_type'] == 1): ?>
+            <a href="index.php?page=division" class="nav-item nav-manage_division">
+                <span class='icon-field'><i class="fa fa-th-list"></i></span> Division
+            </a>
+
             <a href="index.php?page=recruitment_status" class="nav-item nav-recruitment_status">
-            <span class='icon-field'><i class="fa fa-th-list"></i></span> Status Category
+                <span class='icon-field'><i class="fa fa-th-list"></i></span> Status Category
             </a>
             <a href="index.php?page=users" class="nav-item nav-users">
                 <span class='icon-field'><i class="fa fa-users"></i></span> Users
@@ -110,11 +114,6 @@
 
             <a href="index.php?page=site_settings" class="nav-item nav-site_settings">
                 <span class='icon-field'><i class="fa fa-cogs"></i></span> Settings
-            </a>
-
-            <!-- Division with same styling as other buttons -->
-            <a href="#divisionSubmenu" class="nav-item nav-division" data-toggle="collapse">
-                <span class='icon-field'><i class="fa fa-list-alt"></i></span> Divisions
             </a>
 
         <?php elseif ($_SESSION['login_type'] == 2): ?> 

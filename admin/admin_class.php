@@ -165,6 +165,22 @@ Class Action {
 		if($save)
 			return 1;
 	}
+	function save_division(){
+		extract($_POST);
+		$data = " division_name = '$division_name' ";
+		$data .= ", description = '".htmlentities(str_replace("'","&#x2019;",$description))."' ";
+		if(isset($status))
+		$data .= ", status = '$status' ";
+		
+		if(empty($id)){
+			
+			$save = $this->db->query("INSERT INTO division_tbl set ".$data);
+		}else{
+			$save = $this->db->query("UPDATE division_tbl set ".$data." where id=".$id);
+		}
+		if($save)
+			return 1;
+	}
 	function delete_vacancy(){
 		extract($_POST);
 		$delete = $this->db->query("DELETE FROM vacancy where id = ".$id);

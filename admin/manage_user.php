@@ -30,6 +30,16 @@ foreach($user->fetch_array() as $k =>$v){
 				<option value="2" <?php echo isset($meta['type']) && $meta['type'] == 2 ? 'selected': '' ?>>Staff</option>
 			</select>
 		</div>
+		<div class="form-group">
+			<label for="type">Division Type</label>
+			<select name="div_id" id="div_id" class="custom-select">
+				<option value="1" <?php echo isset($meta['div_id']) && $meta['div_id'] == 1 ? 'selected': '' ?>>Medical Center Chief</option>
+				<option value="2" <?php echo isset($meta['div_id']) && $meta['div_id'] == 2 ? 'selected': '' ?>>HOPSS</option>
+				<option value="3" <?php echo isset($meta['div_id']) && $meta['div_id'] == 3 ? 'selected': '' ?>>NURSING</option>
+				<option value="4" <?php echo isset($meta['div_id']) && $meta['div_id'] == 4 ? 'selected': '' ?>>ALLIED</option>
+				<option value="5" <?php echo isset($meta['div_id']) && $meta['div_id'] == 5 ? 'selected': '' ?>>FINANCE</option>
+			</select>
+		</div>
 	</form>
 </div>
 <script>

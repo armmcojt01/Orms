@@ -36,7 +36,7 @@
 							<tbody>
 								<?php 
 								$i = 1;
-								$plan = $conn->query("SELECT * FROM division_tbl order by id asc");
+								$plan = $conn->query ("SELECT * FROM division_tbl order by id asc");
 								while($row=$plan->fetch_assoc()):
 									// $trans = get_html_translation_table(HTML_ENTITIES,ENT_QUOTES);
 									// unset($trans["\""], $trans["<"], $trans[">"], $trans["<h2"]);
